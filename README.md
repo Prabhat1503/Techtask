@@ -17,7 +17,7 @@ List any prerequisites or dependencies needed to run the project.
 
 ### Configuration
 1. Ensure you have an account on MongoDB Cloud an running.
-2. Set up the MongoDB connection URI in the server.js file:
+2. Set up the MongoDB connection URI in the index.js file:
    ```javascript
    // Replace '<dbname>' with your database name
    mongoose.connect('mongodb+srv://username:password@your-cluster.mongodb.net/<dbname>', {
@@ -27,7 +27,7 @@ List any prerequisites or dependencies needed to run the project.
    ```
 
 ### Running the Application
-1. Start the server: `node server.js`
+1. Start the server: `node index.js`
 2. Open a web browser and access the application at `http://localhost:3000` or `https://prabhat-tech-task.onrender.com``
 
 ### Usage
