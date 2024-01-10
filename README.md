@@ -61,5 +61,36 @@ List any prerequisites or dependencies needed to run the project.
 ![database](https://github.com/Prabhat1503/Techtask/assets/121659603/b80dd37c-6efa-45a4-a948-7f42720a10d8)
 
 ### Other Relavent Screenshots of the project
+User Signup
+![signupdata](https://github.com/Prabhat1503/Techtask/assets/121659603/ffd2104f-036d-448f-802c-0eea34606a70)
+
+![signup succes](https://github.com/Prabhat1503/Techtask/assets/121659603/363be389-fac3-44ef-8df3-6cfa25c87998)
+
+
+User Database 
+![database user](https://github.com/Prabhat1503/Techtask/assets/121659603/c2635a05-17d8-41f1-b84d-95eb18000477)
+
+User Login
+![logindata](https://github.com/Prabhat1503/Techtask/assets/121659603/f83ccc05-19cd-435d-9a16-503af11d0528)
+
+![loginsucess](https://github.com/Prabhat1503/Techtask/assets/121659603/e14358fb-7dee-465e-abf9-ca6c25f7ab65)
+
+Contact Us
+![contdata](https://github.com/Prabhat1503/Techtask/assets/121659603/9a3fe6f5-924e-4ae4-8aa5-fd7627291d78)
+
+![contsucess](https://github.com/Prabhat1503/Techtask/assets/121659603/d7463985-5622-4709-bfd8-df9e11624fe5)
+
+![contactdb](https://github.com/Prabhat1503/Techtask/assets/121659603/d8943e2d-2477-4918-89b1-978c674a8752)
+
+
+
+
+
+
+
+
+
+
+
 
 
