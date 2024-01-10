@@ -49,7 +49,7 @@ app.post('/signup', async (req, res) => {
 
         // Hash the password
         const hashedPassword = await bcrypt.hash(password, 10);
-        
+        // const hashedPassword = password;
 
 
         // Create new user
@@ -75,7 +75,8 @@ app.post('/login', async (req, res) => {
         const { email, password } = req.body;
         console.log("data",email, password);
         const user = await User.findOne({email});
-       
+        const allUser = await User.find({});
+        console.log(user,'user')
 
 
         if (!user) {
@@ -83,7 +84,8 @@ app.post('/login', async (req, res) => {
         }
 
         const passwordMatch = await bcrypt.compare(password, user.password);
-        
+        // const passwordMatch = password === user.password ? true : false;
+        console.log("matching",passwordMatch, password, user.password)
 
         if (passwordMatch) {
             res.status(200).send('Login successful!');
@@ -96,36 +98,24 @@ app.post('/login', async (req, res) => {
     }
 });
 
-const contactSchema = new mongoose.Schema({
-    name: String,
-    email: String,
-    message: String,
-});
-
-const Contact = mongoose.model('Contact', contactSchema);
-
 // Define a route to handle the contact form submission
-app.post('/contact', async (req, res) => {
+app.post('/contact', (req, res) => {
     const { name, email, message } = req.body;
 
-    try {
-        // Create new contact instance
-        const newContact = new Contact({
-            name,
-            email,
-            message,
-        });
+    // For now, log the received data to the console
+    console.log('Received contact form data:');
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Message:', message);
 
-        // Save contact to the database
-        await newContact.save();
+    // Here, you can perform further actions like sending emails, storing data, etc.
 
-        // Send a response to indicate successful form submission
-        res.status(200).send('Message received! We will get back to you soon.');
-    } catch (err) {
-        console.error(err);
-        res.status(500).send('Error saving contact form data');
-    }
+    // Send a response to indicate successful form submission
+    res.status(200).send('Message received! We will get back to you soon.');
 });
+
+// ... (other routes and server setup)
+
 
 
 
