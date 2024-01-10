@@ -16,7 +16,7 @@ List any prerequisites or dependencies needed to run the project.
 3. Install dependencies: `npm install`
 
 ### Configuration
-1. Ensure you have MongoDB installed and running.
+1. Ensure you have an account on MongoDB Cloud an running.
 2. Set up the MongoDB connection URI in the server.js file:
    ```javascript
    // Replace '<dbname>' with your database name
